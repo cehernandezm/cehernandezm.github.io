@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../../contexts/ThemeContext/ThemeContext'
+
+//UI
+import { Box } from '@material-ui/core'
+import { useStyle } from './style'
 
 
 const Home = () => {
 
+    const themeContext = useContext(ThemeContext)
+    const classess = useStyle(themeContext.state.theme)()
 
     return (
-        <div>
-            Home papu
-        </div>
+        <Box
+            className={classess.body}
+        >
+            Home
+        </Box>
     )
 }
 
