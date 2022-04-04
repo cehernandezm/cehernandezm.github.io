@@ -1,4 +1,7 @@
 export const Light = {
     title: "Light",
-    "background-color" : "#ae52d4"
+    appBar: {
+        "background-color" : "#F7FAFC",
+        "text-button": "#2D3748"
+    }
 }

@@ -1,4 +1,8 @@
 export const Dark = {
     title : "Dark",
-    "background-color" : "#4a0072"
+    appBar: {
+        "background-color" : "#1f2235",
+        "text-button": "white"
+    }
+    
 }
