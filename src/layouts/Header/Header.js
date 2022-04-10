@@ -4,11 +4,10 @@ import React, { useContext } from 'react'
 // UI
 import {
     AppBar,
-    Box,
     Button,
     Container,
     Grid,
-    IconButton
+    Switch
 } from '@material-ui/core'
 
 //Theme
@@ -23,32 +22,41 @@ import { useStyle } from './style'
 const Header = () => {
 
     const themeContext = useContext(ThemeContext)
-    const classess = useStyle(themeContext.state.theme)()
+    const classes = useStyle(themeContext.state.theme)()
 
-    const onClick = () => {
 
+    const handleChangeSwitch = (event) => {
         if (themeContext.state.theme === Dark) themeContext.dispatch({ type: SWITCH_LIGHT })
         else themeContext.dispatch({ type: SWITCH_DARK })
-
     }
 
     return (
-        <AppBar position="fixed" className={classess.appBar}>
+        <AppBar position="fixed" className={classes.appBar}>
             <Grid
                 container
                 alignItems="center"
                 justifyContent="center"
-                className={classess.appBar}>
-                <Grid>
-                    <Button className={classess.button} >
+                className={classes.appBar}>
+                <Grid item xs={6} md={2}>
+                    <Button className={` ${classes.button} ${classes.buttonName}`} >
                         Carlos Hernandez
                     </Button>
                 </Grid>
-
-                <Grid>
-                    <Button className={classess.button} >
+                <Grid item xs={6} md={2}>
+                    <Button className={classes.button} >
                         About
                     </Button>
+                </Grid>
+                <Grid item xs={6} md={2}>
+                    <Button className={classes.button} >
+                        Contact me
+                    </Button>
+                </Grid>
+                <Grid item>
+                    <Switch
+                        className={classes.switch}
+                        onChange={handleChangeSwitch}
+                        defaultChecked />
                 </Grid>
             </Grid>
 
