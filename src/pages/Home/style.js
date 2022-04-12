@@ -5,10 +5,11 @@ export const useStyle = theme => makeStyles(() => ({
         backgroundColor: theme.body["background-color"],
         marginTop: 60,
         minHeight: '90vh',
+        paddingBottom: 1,
         color: theme.body["text-color"]
     },
     container: {
-        width: '80vh',
+        width: '75vh',
         paddingTop: 50,
     },
     h5: {
@@ -21,5 +22,9 @@ export const useStyle = theme => makeStyles(() => ({
     },
     headerInfo: {
         marginTop: 10
+    },
+    divider : {
+        marginTop: 25,
+        backgroundColor: theme.divider.color
     }
 }))

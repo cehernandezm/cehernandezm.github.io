@@ -12,5 +12,8 @@ export const Light = {
         backgroundColor: '#aab4be',
         backgroundColorThumb: '#001e3c',
         backgroundColorTrack: '#aab4be'
+    },
+    divider : {
+        color : "#000a12"
     }
 }

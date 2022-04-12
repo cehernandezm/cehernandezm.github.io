@@ -12,6 +12,9 @@ export const Dark = {
         backgroundColor: '#8796A5',
         backgroundColorThumb: '#003892',
         backgroundColorTrack: '#8796A5'
+    },
+    divider : {
+        color : "#F7FAFC"
     }
     
 }
