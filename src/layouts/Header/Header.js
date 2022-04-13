@@ -5,7 +5,6 @@ import React, { useContext } from 'react'
 import {
     AppBar,
     Button,
-    Container,
     Grid,
     Switch
 } from '@material-ui/core'
