@@ -36,17 +36,17 @@ const Header = () => {
                 alignItems="center"
                 justifyContent="center"
                 className={classes.appBar}>
-                <Grid item xs={6} md={2}>
+                <Grid item xs={12} md={2}>
                     <Button className={` ${classes.button} ${classes.buttonName}`} >
                         Carlos Hernandez
                     </Button>
                 </Grid>
-                <Grid item xs={6} md={2}>
+                <Grid item xs={12} md={2}>
                     <Button className={classes.button} >
                         About
                     </Button>
                 </Grid>
-                <Grid item xs={6} md={2}>
+                <Grid item xs={12} md={2}>
                     <Button className={classes.button} >
                         Contact me
                     </Button>

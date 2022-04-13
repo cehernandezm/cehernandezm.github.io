@@ -2,9 +2,10 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyle = theme => makeStyles(() => ({
     appBar: {
+        position:"relative",
         backgroundColor: theme.appBar["background-color"],
         boxShadow: 'none',
-        height: '8vh'
+        minHeight: '8vh'
     },
     button: {
         color: theme.appBar["text-button"],

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 export const useStyle = theme => makeStyles(() => ({
     body : {
         backgroundColor: theme.body["background-color"],
-        marginTop: 60,
+        position: "relative",
         minHeight: '90vh',
         paddingBottom: 1,
         color: theme.body["text-color"]
