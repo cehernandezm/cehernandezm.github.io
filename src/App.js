@@ -13,17 +13,21 @@ import Footer from './layouts/Footer/Footer'
 //Pages
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
+import Contact from './pages/Contact/Contact';
+//Components 
+import Body from './layouts/Body/Body'
 
 
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <Routes>
-        <Route exact path="/about" element={<About />} />
-        <Route path="*" element={<Home />} />
+        <Route exact path="/about" element={<Body><About /></Body>} />
+        <Route exact path="/contact" element={<Body><Contact /></Body>} />
+        <Route path="*" element={<Body><Home /></Body>} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

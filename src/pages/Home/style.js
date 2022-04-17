@@ -1,30 +1,21 @@
 import { makeStyles } from "@material-ui/core";
 
-export const useStyle = theme => makeStyles(() => ({
-    body : {
-        backgroundColor: theme.body["background-color"],
-        position: "relative",
-        minHeight: '90vh',
-        paddingBottom: 1,
-        color: theme.body["text-color"]
-    },
-    container: {
-        width: '75vh',
-        paddingTop: 50,
-    },
+export const useStyle = tema => makeStyles((theme) => ({
     h5: {
         fontWeight: 'bold'
     },
     avatar: {
-        width: 80,
-        height: 80,
-        marginLeft: 30
+        width: 100,
+        height: 100,
+        marginTop: 20,
+        marginLeft: 0
     },
     headerInfo: {
         marginTop: 10
     },
-    divider : {
+    divider: {
         marginTop: 25,
-        backgroundColor: theme.divider.color
-    }
+        backgroundColor: tema.divider.color
+    },
 }))
+

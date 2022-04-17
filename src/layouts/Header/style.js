@@ -2,22 +2,31 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyle = theme => makeStyles(() => ({
     appBar: {
-        position:"relative",
+        position: "relative",
         backgroundColor: theme.appBar["background-color"],
         boxShadow: 'none',
-        minHeight: '8vh'
+        minHeight: '8vh',
+        width: '100%'
     },
     button: {
         color: theme.appBar["text-button"],
         fontSize: 13,
         paddingTop: 20,
         paddingBottom: 5,
-        marginRight: 25,
         borderRadius: 0,
         "&:hover": {
             backgroundColor: 'transparent',
             borderBottom: `3px solid ${theme.appBar["text-button"]}`
         }
+    },
+    activeButton: {
+        color: theme.appBar["text-button"],
+        fontSize: 13,
+        paddingTop: 20,
+        paddingBottom: 5,
+        borderRadius: 0,
+        backgroundColor: 'transparent',
+        borderBottom: `3px solid ${theme.appBar["text-button"]}`
     },
     buttonName: {
         fontWeight: "bold"

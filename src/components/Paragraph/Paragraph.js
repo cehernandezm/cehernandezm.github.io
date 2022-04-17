@@ -33,9 +33,10 @@ const Paragraph = (props) => {
                 {body}
             </Typography>
             {labels && (
-                labels.map(label => {
+                labels.map((label,index) => {
                     return (
                         <Chip
+                            key={index}
                             variant="outlined"
                             label={label}
                             className={classes.label}
