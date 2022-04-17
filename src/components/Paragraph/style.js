@@ -7,7 +7,7 @@ export const useStyle = theme => makeStyles(() => ({
     },
     bodyParagraph: {
         marginTop: 10,
-        marginBottom:10
+        marginBottom:10,
     },
     label: {
         color: theme.body['text-color'],
