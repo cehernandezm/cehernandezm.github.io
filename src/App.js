@@ -20,7 +20,7 @@ import Body from './layouts/Body/Body'
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
         <Route exact path="/about" element={<Body><About /></Body>} />

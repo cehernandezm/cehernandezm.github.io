@@ -50,6 +50,7 @@ const Contact = () => {
     }
 
     const handleSubmit = () => {
+        console.log(SERVICE_ID, TEMPLATE_ID, dataForm, PUBLIC_KEY)
         emailjs.send(SERVICE_ID, TEMPLATE_ID, dataForm, PUBLIC_KEY)
             .then((result) => {
                 setDataForm({
