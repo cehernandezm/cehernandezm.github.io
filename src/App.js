@@ -2,7 +2,7 @@ import './App.css';
 import '@fontsource/roboto/400.css';
 
 import {
-  BrowserRouter as Router,
+  HashRouter  as Router,
   Routes,
   Route
 } from 'react-router-dom'

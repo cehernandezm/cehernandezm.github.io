@@ -29,7 +29,7 @@ import {
 const Contact = () => {
 
     const SERVICE_ID = 'service_vfjxk1q'
-    const TEMPLATE_ID = 'emplate_f744qss'
+    const TEMPLATE_ID = 'template_f744qss'
     const PUBLIC_KEY = 'ch4Q7uxdhrxSMq2eX'
 
     const themeContext = useContext(ThemeContext)
