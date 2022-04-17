@@ -28,9 +28,9 @@ import {
 
 const Contact = () => {
 
-    const SERVICE_ID = process.env.REACT_APP_EMAIL_SERVICE_ID
-    const TEMPLATE_ID = process.env.REACT_APP_EMAIL_TEMPLATE_ID
-    const PUBLIC_KEY = process.env.REACT_APP_EMAIL_PUBLIC_KEY
+    const SERVICE_ID = 'service_vfjxk1q'
+    const TEMPLATE_ID = 'emplate_f744qss'
+    const PUBLIC_KEY = 'ch4Q7uxdhrxSMq2eX'
 
     const themeContext = useContext(ThemeContext)
     const classes = useStyle(themeContext.state.theme)()
@@ -50,7 +50,6 @@ const Contact = () => {
     }
 
     const handleSubmit = () => {
-        console.log(SERVICE_ID, TEMPLATE_ID, dataForm, PUBLIC_KEY)
         emailjs.send(SERVICE_ID, TEMPLATE_ID, dataForm, PUBLIC_KEY)
             .then((result) => {
                 setDataForm({

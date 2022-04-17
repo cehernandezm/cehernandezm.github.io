@@ -23,8 +23,8 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route exact path="/about" element={<Body><About /></Body>} />
-        <Route exact path="/contact" element={<Body><Contact /></Body>} />
+        <Route exact path={process.env.PUBLIC_URL + "/about"} element={<Body><About /></Body>} />
+        <Route exact path={process.env.PUBLIC_URL + "/contact"} element={<Body><Contact /></Body>} />
         <Route path="*" element={<Body><Home /></Body>} />
       </Routes>
       <Footer />
