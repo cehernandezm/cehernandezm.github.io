@@ -1,8 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-//UI
-import {
-    Typography,
-} from '@material-ui/core'
 
 export const useStyle = makeStyles((theme) => ({
 

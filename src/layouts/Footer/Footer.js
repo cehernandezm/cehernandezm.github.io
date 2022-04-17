@@ -26,11 +26,6 @@ const Footer = () => {
     const themeContext = useContext(ThemeContext)
     const classes = useStyle(themeContext.state.theme)()
 
-    const handleRedirect = (name) => {
-        let url = "";
-        if (name === "github") url = "";
-        console.log(name)
-    }
     return (
         <Container
             maxWidth='xl'
@@ -45,6 +40,7 @@ const Footer = () => {
                     <a
                         href={GITHUB_URL}
                         target="_blank"
+                        rel="noreferrer"
                         className={classes.link}>
                         <FontAwesomeIcon
                             icon={['fab', 'github-square']}
@@ -54,6 +50,7 @@ const Footer = () => {
                     <a
                         href={LINKEDIN_URL}
                         target="_blank"
+                        rel="noreferrer"
                         className={classes.link}>
                         <FontAwesomeIcon
                             icon={['fab', 'linkedin']}
@@ -63,6 +60,7 @@ const Footer = () => {
                     <a
                         href={TWITTER_URL}
                         target="_blank"
+                        rel="noreferrer"
                         className={classes.link}>
                         <FontAwesomeIcon
                             icon={['fab', 'twitter-square']}

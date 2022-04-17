@@ -3,8 +3,6 @@ import { ThemeContext } from '../../contexts/ThemeContext/ThemeContext'
 
 //UI
 import {
-    Box,
-    Container,
     Grid,
     Typography,
     Avatar,

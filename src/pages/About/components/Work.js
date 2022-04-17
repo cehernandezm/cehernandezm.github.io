@@ -36,19 +36,19 @@ const Work = () => {
                     item
                     xs={4}
                 >
-                    <img className={classes.img} src={MindSetLatino} />
+                    <img className={classes.img} src={MindSetLatino} alt="MindSetLatino" />
                 </Grid>
                 <Grid
                     item
                     xs={4}
                 >
-                    <img className={classes.img} src={Dacema} />
+                    <img className={classes.img} src={Dacema} alt="Dacema"/>
                 </Grid>
                 <Grid
                     item
                     xs={4}
                 >
-                    <img className={classes.imgRectangle} src={Walmart} />
+                    <img className={classes.imgRectangle} src={Walmart} alt="Walmart"/>
                 </Grid>
 
             </Grid>
