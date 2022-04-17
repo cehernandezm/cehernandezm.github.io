@@ -29,11 +29,13 @@ const Paragraph = (props) => {
             <Typography
                 variant={bodyVariant}
                 component="p"
-                className={classes.bodyParagraph}>
+                align='justify'
+                className={classes.bodyParagraph}
+            >
                 {body}
             </Typography>
             {labels && (
-                labels.map((label,index) => {
+                labels.map((label, index) => {
                     return (
                         <Chip
                             key={index}

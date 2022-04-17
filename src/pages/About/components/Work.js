@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../../../contexts/ThemeContext/ThemeContext'
+import { Dark } from '../../../themes/Dark/Dark'
+
 //UI
 import {
     Grid,
@@ -13,6 +15,9 @@ import Paragraph from '../../../components/Paragraph/Paragraph'
 import MindSetLatino from '../../../assets/images/mindsetlatino.png'
 import Dacema from '../../../assets/images/dacema.png'
 import Walmart from '../../../assets/images/walmart.png'
+import Dacema_Dark from '../../../assets/images/dacema_dark.png'
+import MindSetLatino_Light from '../../../assets/images/mindsetlatino_light.png'
+import Walmart_Light from '../../../assets/images/walmart_light.png'
 
 
 const Work = () => {
@@ -34,21 +39,24 @@ const Work = () => {
             >
                 <Grid
                     item
-                    xs={4}
+                    xs={12}
+                    md={4}
                 >
-                    <img className={classes.img} src={MindSetLatino} alt="MindSetLatino" />
+                    <img className={classes.img} src={themeContext.state.theme === Dark ? MindSetLatino : MindSetLatino_Light} alt="MindSetLatino" />
                 </Grid>
                 <Grid
                     item
-                    xs={4}
+                    xs={12}
+                    md={4}
                 >
-                    <img className={classes.img} src={Dacema} alt="Dacema"/>
+                    <img className={classes.img} src={themeContext.state.theme === Dark ? Dacema_Dark : Dacema} alt="Dacema"/>
                 </Grid>
                 <Grid
                     item
-                    xs={4}
+                    xs={12}
+                    md={4}
                 >
-                    <img className={classes.imgRectangle} src={Walmart} alt="Walmart"/>
+                    <img className={classes.imgRectangle} src={themeContext.state.theme === Dark ? Walmart : Walmart_Light} alt="Walmart"/>
                 </Grid>
 
             </Grid>
