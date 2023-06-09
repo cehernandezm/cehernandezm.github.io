@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.5417a85b.css",
-    "main.js": "/static/js/main.ecdaf670.js",
+    "main.js": "/static/js/main.3a040375.js",
     "static/js/787.f2a0fa2f.chunk.js": "/static/js/787.f2a0fa2f.chunk.js",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.376ea5d93f71583052f6.woff",
-    "static/media/avatar.jpg": "/static/media/avatar.af62f447bd6626af881b.jpg",
+    "static/media/profile.jpeg": "/static/media/profile.f9929451c26449a7e348.jpeg",
     "static/media/walmart.png": "/static/media/walmart.33f28488fbcd3a434669.png",
     "static/media/dacema.png": "/static/media/dacema.ce00b12d1af42df4c0c3.png",
     "static/media/mindsetlatino.png": "/static/media/mindsetlatino.912026f15924413ccefe.png",
@@ -20,11 +20,11 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bb723e8458c9c653e505.woff2",
     "index.html": "/index.html",
     "main.5417a85b.css.map": "/static/css/main.5417a85b.css.map",
-    "main.ecdaf670.js.map": "/static/js/main.ecdaf670.js.map",
+    "main.3a040375.js.map": "/static/js/main.3a040375.js.map",
     "787.f2a0fa2f.chunk.js.map": "/static/js/787.f2a0fa2f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5417a85b.css",
-    "static/js/main.ecdaf670.js"
+    "static/js/main.3a040375.js"
   ]
 }
