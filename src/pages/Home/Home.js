@@ -11,7 +11,7 @@ import {
 import { useStyle } from './style'
 
 //IMG
-import avatarImage from '../../assets/images/avatar.jpg'
+import avatarImage from '../../assets/images/profile.jpeg'
 
 //Components
 import Paragraph from '../../components/Paragraph/Paragraph'
